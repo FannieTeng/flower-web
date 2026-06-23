@@ -1,0 +1,276 @@
+:root {
+  --bg-soft: #faeceb;
+  --pink: #ef8199;
+  --pink-light: #ffc9ca;
+  --wine: #8f2026;
+  --text: #5f5555;
+}
+
+body {
+  color: var(--text);
+  background: var(--bg-soft);
+  font-family: "Noto Sans TC", "Microsoft JhengHei", system-ui, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.site-header {
+  background: #fff2f1;
+}
+
+.navbar {
+  min-height: 86px;
+}
+
+.brand-mark {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--wine);
+  font-weight: 900;
+  line-height: 1;
+}
+
+.brand-mark i {
+  font-size: 2rem;
+}
+
+.brand-title {
+  display: block;
+  font-size: 1rem;
+  letter-spacing: 0;
+}
+
+.brand-subtitle {
+  display: block;
+  font-size: .86rem;
+  letter-spacing: .08rem;
+  color: #c96567;
+}
+
+.nav-link {
+  color: #5f5555;
+  font-weight: 700;
+  padding-inline: 1.15rem !important;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--wine);
+}
+
+.hero-carousel .carousel-item {
+  height: 430px;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-carousel .carousel-item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(174, 80, 92, .12);
+}
+
+.hero-slide-1 {
+  background-image: url("https://images.unsplash.com/photo-1494336934272-f0efcedfc8cb?auto=format&fit=crop&w=1800&q=85");
+}
+
+.hero-slide-2 {
+  background-image: url("https://images.unsplash.com/photo-1468327768560-75b778cbb551?auto=format&fit=crop&w=1800&q=85");
+}
+
+.hero-slide-3 {
+  background-image: url("https://images.unsplash.com/photo-1562690868-60bbe7293e94?auto=format&fit=crop&w=1800&q=85");
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  min-height: 430px;
+  text-shadow: 0 2px 10px rgba(80, 30, 30, .18);
+}
+
+.hero-title {
+  color: #fff;
+  font-size: clamp(2.35rem, 5vw, 4rem);
+  font-weight: 900;
+  letter-spacing: 0;
+}
+
+.btn-hero {
+  width: min(210px, 60vw);
+  border: 0;
+  border-radius: 6px;
+  background: #fff;
+  color: var(--wine);
+  font-weight: 800;
+  padding: .7rem 1.75rem;
+}
+
+.section-space {
+  padding-block: 46px;
+}
+
+.section-title {
+  color: #514444;
+  font-size: 1.65rem;
+  font-weight: 500;
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.product-card {
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(96, 66, 66, .18);
+  padding: 18px;
+}
+
+.product-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.product-card .card-text {
+  color: #7b7474;
+  line-height: 1.55;
+  margin-block: 18px 16px;
+}
+
+.btn-cart {
+  width: 100%;
+  border: 0;
+  border-radius: 6px;
+  background: var(--pink);
+  color: #fff;
+  font-weight: 800;
+  padding-block: .62rem;
+}
+
+.btn-cart:hover,
+.btn-cart:focus {
+  background: #dc6f88;
+  color: #fff;
+}
+
+.all-products {
+  color: #514444;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.feature-image {
+  width: 100%;
+  aspect-ratio: 16 / 8.2;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.feature-text {
+  color: #5f5555;
+  font-weight: 600;
+  line-height: 2;
+}
+
+.site-footer {
+  background: var(--pink-light);
+  padding-block: 78px 28px;
+}
+
+.footer-title {
+  color: #675656;
+  font-size: 1.05rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.footer-links {
+  list-style: none;
+  margin: 0 0 34px;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #7c6a6a;
+}
+
+.footer-links a:hover,
+.social-links a:hover {
+  color: var(--wine);
+}
+
+.footer-brand {
+  color: var(--wine);
+  font-weight: 900;
+}
+
+.store-title {
+  color: #4d3232;
+  font-size: 1.28rem;
+  font-weight: 900;
+}
+
+.store-info {
+  line-height: 1.9;
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;
+  margin-top: 16px;
+}
+
+.social-links a {
+  color: var(--wine);
+  font-size: 1.55rem;
+}
+
+.copyright {
+  color: #7b6b6b;
+  font-size: .95rem;
+  margin-top: 34px;
+  text-align: center;
+}
+
+@media (max-width: 991.98px) {
+  .navbar {
+    min-height: 72px;
+  }
+
+  .hero-carousel .carousel-item,
+  .hero-content {
+    height: 360px;
+    min-height: 360px;
+  }
+
+  .nav-link {
+    padding-block: .75rem !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero-carousel .carousel-item,
+  .hero-content {
+    height: 300px;
+    min-height: 300px;
+  }
+
+  .section-space {
+    padding-block: 34px;
+  }
+
+  .site-footer {
+    padding-top: 48px;
+  }
+}
