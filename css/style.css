@@ -275,3 +275,13 @@ a {
     padding-top: 48px;
   }
 }
+
+
+a.btnstyle {
+  color:white;
+  cursor: pointer;
+  text-decoration: none;
+}
+a.btnstyle:hover {
+  background-color:#00438a;
+}
