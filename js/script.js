@@ -17,6 +17,8 @@ document.addEventListener("DOMContentLoaded", () => {
       event.preventDefault();
       trackAddToCart();
       alert("您已將商品加入購物車");
+
+      window.location.href = 'goal.html'; 
     });
   });
 });
