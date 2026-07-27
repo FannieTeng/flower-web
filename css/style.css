@@ -285,3 +285,99 @@ a.btnstyle {
 a.btnstyle:hover {
   background-color:#00438a;
 }
+
+.page-hero {
+  background: linear-gradient(135deg, rgba(143, 32, 38, .82), rgba(239, 129, 153, .7)), url("../assets/images/hero-2.jpg") center / cover;
+  color: #fff;
+  padding: 76px 0;
+  text-align: center;
+}
+
+.page-hero h1 {
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  font-weight: 900;
+  margin-bottom: 12px;
+}
+
+.page-hero p {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.contact-card,
+.contact-form {
+  height: 100%;
+  background: #fff;
+  border: 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(96, 66, 66, .14);
+  padding: 28px;
+}
+
+.contact-card i {
+  color: var(--pink);
+  font-size: 1.75rem;
+}
+
+.contact-card h2,
+.contact-form h2,
+.faq-title {
+  color: #514444;
+  font-size: 1.35rem;
+  font-weight: 800;
+}
+
+.contact-card p,
+.contact-card a {
+  color: #716565;
+  line-height: 1.8;
+}
+
+.contact-form .form-label {
+  color: #5f5555;
+  font-weight: 700;
+}
+
+.contact-form .form-control,
+.contact-form .form-select {
+  border-color: #e7c7c7;
+  padding: .7rem .8rem;
+}
+
+.contact-form .form-control:focus,
+.contact-form .form-select:focus {
+  border-color: var(--pink);
+  box-shadow: 0 0 0 .2rem rgba(239, 129, 153, .18);
+}
+
+.btn-contact {
+  border: 0;
+  border-radius: 6px;
+  background: var(--pink);
+  color: #fff;
+  font-weight: 800;
+  padding: .72rem 2.2rem;
+}
+
+.btn-contact:hover,
+.btn-contact:focus {
+  background: #dc6f88;
+  color: #fff;
+}
+
+.faq-list .accordion-item {
+  border: 0;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+.faq-list .accordion-button {
+  color: #514444;
+  font-weight: 700;
+}
+
+.faq-list .accordion-button:not(.collapsed) {
+  background: #fff0f1;
+  box-shadow: none;
+}
